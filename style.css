@@ -1,0 +1,241 @@
+:root{
+    --primary-font-size: 1.8rem;
+    --segundary-font-size: 2.5rem;
+    --terciary-font-size: 2.1rem
+}
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}       
+html{
+    font-size: 62.5%;
+}
+header{
+    display: flex;
+    background-color: rgb(194, 190, 190);
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+.header_logo{
+    text-align: left;
+    width: 40%;
+}
+.header_logo img{
+    height: 5rem;
+    width: 15rem;
+    
+}
+.header_atajos{
+    width: 100%;
+    text-align: right;
+}
+.header_lista_atajos{
+    display: inline-block;
+    font-size: var(--primary-font-size);
+    padding-right: 20px;
+}
+.header_lista_atajos a{
+    text-decoration: none;
+    color: black ;
+}
+.header_lista_atajos a:hover{
+    color: rgb(43, 170, 138);
+}
+.header_lista_atajos a:active{
+    color: rgb(255, 255, 255);
+}
+.header_lista_atajos a::after{
+    content:  " | " ;
+    color: white;
+}
+.granContenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.aside{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}   
+
+.aside_titulo{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: var(--segundary-font-size);
+    color: black;
+    text-align: center;
+}
+.aside_titulos{
+    text-align: center;
+}
+.aside img{
+    width: 80%;
+    border-radius: 30px;
+    border: solid 1px white;
+    box-shadow: #00adad 2px 2px 12px 4px; 
+    margin-top: 8px;
+}
+.imagenes_-_{
+    display: flex;
+    justify-content: center;
+}
+.imagenes_-_ :hover{
+    box-shadow: #8232b1 2px 2px 12px 4px;
+}
+.imagenes_-_ :active{
+    box-shadow: white 2px 2px 12px 4px;
+}
+.aside_figure_perro{
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.aside_titulo_2{
+    margin-top: 15px;
+    font-size: var(--terciary-font-size);
+    color: black;
+    text-align: center;
+}
+.aside_button{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.aside_button :hover{
+    box-shadow: #3fcece 2px 2px 12px 4px; 
+}
+.aside_button :active{
+    box-shadow: #e721d7 2px 2px 12px 4px;
+}
+.button{
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: #ad65c7;
+    border: solid 1px white;
+    box-shadow: #8232b1 2px 2px 12px 4px;
+}
+.main{
+    display: flex;
+    width: 70%;
+    background-color: white;
+    flex-direction: column;
+    
+}
+.titulo_main{
+    font-size: var(--segundary-font-size);
+    text-align: center;
+    margin-top: 15px;
+}
+.texto_main{
+    margin: 5px 20px 5px 20px;
+    text-align: justify;
+    font-size: var(--terciary-font-size);
+}
+.main_button{
+    display: flex;
+    justify-content: space-evenly ;
+    padding: 10px 0px;
+}
+.main_button :hover{
+    box-shadow: #17c7c7 2px 2px 12px 4px; 
+}
+.main_button :active{
+    box-shadow: #da20ca 2px 2px 12px 4px;
+}
+.button_main{
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: #ad65c7;
+    border: solid 1px white;
+    box-shadow: #8232b1 2px 2px 12px 4px;
+}
+.footer{
+    display: flex;
+    background-color: rgb(128, 156, 192);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+}
+.footer_texto{
+    width: 70%;
+    font-size: var(--primary-font-size);
+    padding-left: 5px;
+}
+.footer_redes_sociales{
+    width:70%;
+    text-align: right;
+}
+.footer_lista_redes_sociales{
+    display: inline-block;
+    padding-right: 10px;
+}
+.footer_redes_sociales img{
+    width: 25px;
+}   
+/* HTML GATOS Y PERROS*/
+
+.titulo_gato{
+    text-align: center;
+    font-size: var(--segundary-font-size);
+    margin: 5px;
+}
+.texto_gatos{
+    margin: 5px 20px 5px 20px;
+    text-align: justify;
+    font-size: var(--terciary-font-size);
+}
+.animales_callejeros_imagen{
+    display: flex;
+    justify-content: center;
+}
+.callejeros{
+    width: 70%;
+    border-radius: 30px;
+    border: solid 1px rgb(0, 0, 0);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.titulo_enfermedades{
+    text-align: center;
+    font-size: 2.3rem;
+    margin-top: 15px;
+}
+.texto_perros{
+    margin: 5px 20px 5px 20px;
+    text-align: justify;
+    font-size: var(--terciary-font-size);
+}
+.titulo_perro{
+    text-align: center;
+    font-size: var(--segundary-font-size);
+    margin: 5px;
+}
+/* HTML ADOPTAR */
+.nombres_mascotas{
+    margin-top: 15px;
+    font-size: var(--terciary-font-size);
+    color: black;
+    text-align: center;
+}
+.texto_adoptar{
+    text-align: justify;
+    font-size: var(--terciary-font-size);
+    margin: 5px;
+}
+.animales_en_adopcion{
+    display: flex;
+    justify-content: center;
+}
+.adopcion{
+    width: 40%;
+    border-radius: 30px;
+    border: solid 1px rgb(0, 0, 0);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
